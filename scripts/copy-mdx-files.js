@@ -1,11 +1,10 @@
 // scripts/copy-mdx-files.js
-
-const path = require("path");
-const fs = require("fs-extra");
-const glob = require("glob");
+import path from "path";
+import fs from "fs-extra";
+import { glob } from "glob";
 
 async function copyMdxFiles() {
-  const sourceDirectory = path.join(process.cwd(), "pages");
+  const sourceDirectory = path.join(process.cwd(), "content");
   const targetDirectory = path.join(process.cwd(), "public", "mdx");
 
   // Remove the mdx directory if it exists

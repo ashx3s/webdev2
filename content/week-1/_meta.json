@@ -1,0 +1,8 @@
+{
+  "index": "Intro to web app development",
+  "intro-web-app-dev": "Intro to Web App Dev",
+  "refresher": "HTML/CSS/JS Refresher",
+  "refresher-demo": { "display": "hidden" },
+  "assignment": "Week 1 Assignment",
+  "slides": { "display": "hidden" }
+}

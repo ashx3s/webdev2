@@ -1,0 +1,19 @@
+/* app/globals.css or your main CSS file */
+@import "tailwindcss";
+@import "nextra-theme-docs/style.css";
+
+:root {
+  /* Custom primary hue for both light and dark themes */
+  --nextra-primary-hue: 130deg;
+  --nextra-primary-saturation: 100%;
+
+  /* You can also override specific color variables if needed */
+  --nextra-primary-600: hsl(130, 100%, 45%);
+  --nextra-primary-500: hsl(130, 100%, 50%);
+  --nextra-primary-400: hsl(130, 100%, 60%);
+}
+
+[data-theme="dark"] {
+  --nextra-primary-hue: 130deg;
+  --nextra-primary-saturation: 100%;
+}

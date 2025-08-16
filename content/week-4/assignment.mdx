@@ -1,0 +1,101 @@
+# Week 4 Assignment
+
+## Overview
+
+For this week's assignment, you'll begin creating a `NewItem` component using React for a Shopping List App. You will finish creating this component in Week 5.
+
+The NewItem component allows users to enter details about a new item they wish to add to a list which contains the following information:
+
+- Item Name
+- Quantity
+- Category
+
+For this week, we will focus just on the quantity.
+
+## Prerequisites
+
+If you did not complete Week 1 Assignment, complete the [Guide: Setting Up Your Development Environment](/guides-and-references/development-environment-setup) and send your GitHub username to the instructor.
+
+If you did not complete the Week 2 Assignment, complete the [Guide: How to Create a New Next.js Project](/guides-and-references/creating-new-nextjs-project).
+
+## Part 1: Link to Week 4 Assignment
+
+Edit the project file `/app/page.js` and add a link to `week-4` in the list of links.
+
+## Part 2:
+
+import { Steps } from "nextra-theme-docs";
+
+<Steps>
+
+### Create the Folder and Files
+
+Create the folder `/app/week-4` and create files `page.js` and `new-item.js` inside it.
+
+Edit `page.js` to be a Next.js page component that renders the NewItem component.
+
+### Setup NewItem Component
+
+- Add the `"use client"` directive to the top of the file.
+- Import the useState hook from React.
+
+### Initialize State Variables
+
+**Quantity**
+
+- Use the `useState` hook to create a state variable called `quantity` and a setter function called `setQuantity`.
+- The initial value of `quantity` should be `1`, indicating that the quantity field is initially set to 1.
+
+### Create `increment` and `decrement` Functions
+
+- Create a function called `increment` that increments the `quantity` state variable by 1. Ensure that the quantity does not exceed 20.
+- Create a function called `decrement` that decrements the `quantity` state variable by 1. Ensure that the quantity does not go below 1.
+
+import { Callout } from "nextra-theme-docs";
+
+<Callout type="info" emoji="️🙅">
+  Don't forget to never modify the state directly. Always use the setter
+  function provided by the `useState` hook, i.e. `setQuantity`.
+</Callout>
+
+### Render the Component
+
+In the return statement of your function, render the following:
+
+- The current quantity value.
+- Decrement button
+  - The button should call the `decrement` function when clicked.
+  - The button should be disabled if the quantity is 1 to indicate to the user that the quantity cannot go below 1.
+- Increment button
+  - The button should call the `increment` function when clicked.
+  - The button should be disabled if the quantity is 20 to indicate to the user that the quantity cannot exceed 20.
+
+### Style the Component
+
+Style the component using Tailwind CSS. You do not need to match the example output, but your component should be styled in a way that is visually appealing and easy to use.
+
+### Test Your Component
+
+Test your component by running the project and navigating to the `/week-4` page. Try clicking the increment and decrement buttons to ensure that the quantity is updated correctly. In addition, test that the quantity is limited between 1 and 20.
+
+</Steps>
+
+### Example Output
+
+https://cprg306-assignments.vercel.app/week-4
+
+## Part 3: Assignment Submission
+
+The instructor will be able to find your assignment in your GitHub repository. Make sure you have committed and pushed your changes to GitHub before the assignment deadline.
+
+Ensure the following:
+
+- The instructor has your current GitHub username.
+- The GitHub repository is **public** and named exactly `cprg306-assignments`.
+- The new page is named exactly `week-4` (lowercase).
+
+---
+
+
+
+<AssignmentChecker week="4" />

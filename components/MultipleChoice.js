@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import styles from "./MultipleChoice.module.css";
